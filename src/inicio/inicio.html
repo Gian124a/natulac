@@ -21,7 +21,7 @@
             </a>
         </nav>
     </header>
-    <main class="absolute top-[75px] w-full h-[200vh] flex flex-col px-3">
+    <main class="absolute top-[75px] w-full flex flex-col px-3">
         <div class="bg-white w-full h-[60px] flex items-center pl-3 border-b border-blue-600">
             <div class="flex items-end">
                 <a href="../inicio/inicio.html" class="text-blue-600 text-[31px] leading-3 mr-3">
@@ -32,57 +32,64 @@
                 </div>
             </div>
         </div>
-        <article class="relative bg-red-500 flex-1 flex flex-col">
-            <section class="relative flex justify-center items-center h-[30%] w-full">
-                <div class="relative w-[237px] h-[159px] bg-white">
-                    <div class="absolute top-0 left-0 right-0 bottom-0 m-auto bg-[#ace4b0] h-[62%] w-[75%] rounded-2xl border-[1.5px] border-[#348b3a] z-20"></div>
-                    <div class="absolute top-[7.5%] left-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10"></div>
-                    <div class="absolute top-[7.5%] right-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10"></div>
-                    
-                    <div class="absolute top-[38%] right-[9px] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10 rotate-[90deg]"></div>
-                    <div class="absolute top-[38%] left-[9px] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10 rotate-[-90deg]"></div>
+        <article class="relative top-12 flex-1 flex flex-col">
+            <!-- Mesa -->
 
-                    <div class="absolute bottom-[7.5%] left-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10 rotate-[180deg]"></div>
-                    <div class="absolute bottom-[7.5%] right-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[1.5px] border-l-[1.5px] border-r-[1.5px] border-[#348b3a] rounded-lg z-10 rotate-[180deg]"></div>
+            <section class="relative flex justify-center items-center h-[25%] w-full">
+                <div class="relative w-[310px] h-[215px] bg-white">
+                    <div id="mesa" class="absolute top-0 left-0 right-0 bottom-0 m-auto bg-[#ace4b0] h-[62%] w-[75%] rounded-2xl border-[2px] border-[#39a541] z-20"></div>
+                    <div class="absolute top-0 left-0 right-0 bottom-0 m-auto bg-[red] h-[62%] w-[75%] rounded-2xl border-[2px] border-[#39a541] z-0 shadow-[#919191] shadow-lg"></div>
+                    <div id="silla" class="silla absolute top-[7%] left-[26%] w-[14%] h-[21%] bg-[#77aade] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner"></div>
+                    <div id="silla" class="silla absolute top-[7%] right-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner"></div>
+                    
+                    <div id="silla" class="silla absolute top-[38%] right-[9px] w-[14%] h-[21%] bg-[#82d688] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner rotate-[90deg]"></div>
+                    <div id="silla" class="silla absolute top-[38%] left-[9px] w-[14%] h-[21%] bg-[#82d688] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner rotate-[-90deg]"></div>
+
+                    <div id="silla" class="silla absolute bottom-[7%] left-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner rotate-[180deg]"></div>
+                    <div id="silla" class="silla absolute bottom-[7%] right-[26%] w-[14%] h-[21%] bg-[#82d688] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner rotate-[180deg]"></div>
                 </div>
             </section>
-            <section class="bg-yellow-400 flex justify-center py-6 pb-20 overflow-hidden">
-                <div class="w-[80%] h-[600px] bg-white rounded-3xl flex flex-col">
-                    <div class="flex-1 bg-red-500 flex justify-center items-center">
+
+
+            <!-- Detalles de la reserva -->
+            <section class="flex justify-center py-6 pb-20 overflow-hidden">
+                <div class="w-[90%] h-[660px] pb-7 bg-[#ececec] rounded-3xl flex flex-col">
+                    <div class="flex-1 flex justify-center items-center">
                         <h1 class="text-[32px] font-semibold text-blue-500">Detalles</h1>
                     </div>
-                    <div class="flex-1 bg-green-500 flex justify-center items-center">
-                        <div class="text-[22px] flex items-center justify-center bg-red-500">
-                            <div class="rounded-[50%] w-[20px] h-[20px] bg-white mr-3"></div>
-                            <p class="">Disponible</p>
+                    <div class="flex-1 flex justify-center items-center">
+                        <div class="text-[22px] flex items-center justify-center">
+                            <div class="rounded-[50%] w-[20px] h-[20px] bg-green-300 border-2 border-green-500 mr-2"></div>
+                            <p id="servicio" class="text-[25px] font-medium">En uso</p>
                         </div>
                     </div>
-                    <div class="flex-1 bg-purple-600">
-                        <h2>Sala</h2>
-                        <p>no hay sala asignada</p>
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h2 class="text-[20px] font-semibold">Sala</h2>
+                        <p class="text-[15px] text-[#939393]">no hay sala asignada</p>
                     </div>
-                    <div class="flex-1 bg-blue-500">
-                        <h2>Fecha pautada</h2>
-                        <p>fecha aun no disponible</p>
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h2 class="text-[20px] font-semibold">Fecha pautada</h2>
+                        <p class="text-[15px] text-[#939393]">fecha aun no disponible</p>
                     </div>
-                    <div class="flex-1 bg-orange-500">
-                        <h2>Hora pautada</h2>
-                        <p>hora aun no disponible</p>
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h2 class="text-[20px] font-semibold">Hora pautada</h2>
+                        <p class="text-[15px] text-[#939393]">hora aun no disponible</p>
                     </div>
-                    <div class="flex-1 bg-slate-500">
-                        <h2>Hora de finalizacion</h2>
-                        hora aun no disponible
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h2 class="text-[20px] font-semibold">Hora de finalizacion</h2>
+                        <p class="text-[15px] text-[#939393]">hora aun no disponible</p>
                     </div>
-                    <div class="flex-1 bg-orange-300">
-                        <button>Empleados sitados</button>
+                    <div class="flex-1 flex flex-col justify-center items-center mt-3">
+                        <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] mb-[35px] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500">Empleados sitados</button>
+                        <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500">Informacion</button>
+                        
                     </div>
-                    <div class="flex-1 bg-lime-600">Informacion</div>
                 </div>
             </section>
         </article>
     </main>
 
- 
+    <script src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
