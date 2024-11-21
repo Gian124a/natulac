@@ -32,11 +32,11 @@
                 </div>
             </div>
         </div>
-        <article class="relative top-12 flex-1 flex flex-col">
+        <article class="relative top-12 flex-1 flex flex-col xl:flex-row xl:items-center xl:top-0 xl:justify-center 2xl:justify-evenly 2xl:pt-14">
             <!-- Mesa -->
 
-            <section class="relative flex justify-center items-center h-[25%] w-full">
-                <div class="relative w-[310px] h-[215px] bg-white">
+            <section class="relative flex justify-center items-center w-full md:h-[350px] lg:h-[430px] xl:max-w-[500px]">
+                <div class="relative w-[310px] h-[215px] md:w-[330px] md:h-[235px] lg:w-[390px] lg:h-[295px] bg-white 2xl:w-[500px] 2xl:h-[395px]">
                     <div id="mesa" class="absolute top-0 left-0 right-0 bottom-0 m-auto bg-[#ace4b0] h-[62%] w-[75%] rounded-2xl border-[2px] border-[#39a541] z-20"></div>
                     <div class="absolute top-0 left-0 right-0 bottom-0 m-auto bg-[red] h-[62%] w-[75%] rounded-2xl border-[2px] border-[#39a541] z-0 shadow-[#919191] shadow-lg"></div>
                     <div id="silla" class="silla absolute top-[7%] left-[26%] w-[14%] h-[21%] bg-[#77aade] border-t-[2px] border-l-[2px] border-r-[2px] border-[#39a541] rounded-lg z-10 shadow-[#39a541] shadow-inner"></div>
@@ -52,37 +52,47 @@
 
 
             <!-- Detalles de la reserva -->
-            <section class="flex justify-center py-6 pb-20 overflow-hidden">
-                <div class="w-[90%] h-[660px] pb-7 bg-[#ececec] rounded-3xl flex flex-col">
-                    <div class="flex-1 flex justify-center items-center">
-                        <h1 class="text-[32px] font-semibold text-blue-500">Detalles</h1>
+            <section class="flex justify-center py-6 pb-20 overflow-hidden xl:pb-6 ">
+                <div class="w-[90%] h-[660px] pb-7 bg-[#ececec] rounded-3xl flex flex-col xl:w-[650px] xl:h-[500px] 2xl:w-[750px] 2xl:h-[550px]">
+                    <div class="flex-1 flex justify-center items-center py-3">
+                        <h1 class="text-[32px] font-semibold text-blue-500 sm:text-[40px] xl:text-[42px]">Detalles</h1>
                     </div>
                     <div class="flex-1 flex justify-center items-center">
                         <div class="text-[22px] flex items-center justify-center">
-                            <div class="rounded-[50%] w-[20px] h-[20px] bg-green-300 border-2 border-green-500 mr-2"></div>
-                            <p id="servicio" class="text-[25px] font-medium">En uso</p>
+                            <div class="silla rounded-[50%] w-[20px] h-[20px] border-2 border-green-500 mr-2 sm:w-[25px] sm:h-[25px] xl:w-[23px] xl:h-[23px]"></div>
+                            <p id="servicio" class="text-[25px] font-medium sm:text-[30px] xl:text-[25px]">Disponible</p>
                         </div>
                     </div>
-                    <div class="flex-1 flex flex-col justify-center items-center">
-                        <h2 class="text-[20px] font-semibold">Sala</h2>
-                        <p class="text-[15px] text-[#939393]">no hay sala asignada</p>
+                    <div class="h-[350px] w-full grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 xl:h-[280px]">
+                        <div class="flex flex-col justify-center items-center">
+                            <h2 class="text-[23px] font-semibold md:text-[27px] xl:text-[23px] 2xl:text-[25px]">Sala</h2>
+                            <p class="text-[17px] text-[#939393] md:text-[19px] xl:text-[15px] 2xl:text-[17px]">no hay sala asignada</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <h2 class="text-[23px] font-semibold md:text-[27px] xl:text-[23px] 2xl:text-[25px]">Fecha pautada</h2>
+                            <p class="text-[17px] text-[#939393] md:text-[19px] xl:text-[15px] 2xl:text-[17px]">fecha aun no disponible</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <h2 class="text-[23px] font-semibold md:text-[27px] xl:text-[23px] 2xl:text-[25px]">Hora pautada</h2>
+                            <p class="text-[17px] text-[#939393] md:text-[19px] xl:text-[15px] 2xl:text-[17px]">hora aun no disponible</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <h2 class="text-[23px] font-semibold md:text-[27px] xl:text-[23px] 2xl:text-[25px]">Hora de finalizacion</h2>
+                            <p class="text-[17px] text-[#939393] md:text-[19px] xl:text-[15px] 2xl:text-[17px]">hora aun no disponible</p>
+                        </div>
                     </div>
-                    <div class="flex-1 flex flex-col justify-center items-center">
-                        <h2 class="text-[20px] font-semibold">Fecha pautada</h2>
-                        <p class="text-[15px] text-[#939393]">fecha aun no disponible</p>
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center items-center">
-                        <h2 class="text-[20px] font-semibold">Hora pautada</h2>
-                        <p class="text-[15px] text-[#939393]">hora aun no disponible</p>
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center items-center">
-                        <h2 class="text-[20px] font-semibold">Hora de finalizacion</h2>
-                        <p class="text-[15px] text-[#939393]">hora aun no disponible</p>
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center items-center mt-3">
-                        <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] mb-[35px] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500">Empleados sitados</button>
-                        <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500">Informacion</button>
-                        
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 mt-3">
+                        <div class="flex justify-center">
+                            <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] mb-[35px] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500 sm:text-[20px] lg:text-[22px] lg:px-[35px] xl:text-[16px]">
+                                Empleados citados
+                            </button>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <button class="cursor-pointer bg-[#50B147] text-[17px] font-semibold text-white px-[30px] py-[12px] rounded-2xl shadow-md shadow-[#919191] mb-[35px] duration-500 hover:transition-colors hover:bg-[#35822e] hover:duration-500 sm:text-[20px] lg:text-[22px] lg:px-[35px] xl:text-[16px]">
+                                Informacion
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
