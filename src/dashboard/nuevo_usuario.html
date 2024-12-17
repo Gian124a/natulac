@@ -22,9 +22,17 @@
     <div class="relative w-full py-1 bg-[#343140] lg:hidden">
         <h1 class="relative lg:left-[5%] text-white text-[12px] text-center font-medium sm:text-[13px] md:text-[15px] lg:text-[16px] xl:text-[15px] transition-left duration-500">Sistema para Reserva de Salas de Conferencias</h1>
     </div>
-    <main class="flex-1 flex">
-        <div class="relative flex-1 flex">
-            <div id="nav" class="fixed z-40 top-0 left-[-100vw] bg-[#1E1C2E] h-screen w-[100%] flex flex-col items-center overflow-y-auto sm:max-w-[330px] lg:h-full lg:max-w-[290px] xl:max-w-[260px] md:overflow-hidden xl:overflow-hidden">
+    <!-- Parte principal del sistema -->
+    
+    <main class="flex-1 flex flex-col">
+
+        <div class="relative flex justify-start flex-1 h-full">
+
+            <!-- Slider del sistema -->
+
+            <div id="nav" class="fixed z-40 top-0 left-[-100vw] bg-[#1E1C2E] h-screen w-[100%] flex flex-col items-center overflow-y-auto sm:max-w-[330px] lg:max-w-[290px] xl:max-w-[260px] md:overflow-hidden xl:overflow-hidden">
+
+                <!-- Logo - boton de menu -->
                 <div class="relative w-full h-[70px] flex justify-center items-center">
                     <div class="relative w-[80px] h-[90%]">
                         <img class="absolute w-full h-full object-cover" src="../img/logo.png" alt="">
@@ -34,6 +42,7 @@
                     </button>
                 </div>
         
+                <!-- Opcion del perfil de usuario -->
                 <div class="w-full h-[200px] flex flex-col justify-center items-center">
                     <div class="relative flex justify-center items-center mb-4 lg:mb-4">
                         <div class="relative w-[120px] h-[120px] rounded-[50%] border-2 border-[#2e9f2a] overflow-hidden lg:w-[120px] lg:h-[120px] xl:w-[100px] xl:h-[100px]">
@@ -44,50 +53,69 @@
                         <h1 class="text-[22px] text-white font-medium lg:text-[20px] xl:text-[18px]">Anderson Villalonga</h1>
                     </div>
                 </div>
-        
+
+                <!-- Separador del menu -->
                 <div class="relative top-2 w-[90%] h-[1px] bg-gray-500 xl:top-0"></div>
         
+                <!-- Comienzo de las opciones principales del menu-->
                 <div class="relative top-3 w-full flex-1 xl:top-0">
                     <div class="relative flex flex-col pt-4">
+
+                        <!-- Subtitulo "Menu" -->
                         <div class="pb-[5px] pl-6">
                             <p class="text-gray-400 font-medium text-[17.5px] sm:text-[16px] lg:text-[15px] xl:text-[14px]">Menu</p>
                         </div>
+
+                        <!-- Opcion 1: Acceso al dashboard -->
                         <a id="select1" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium text-[17px] flex items-center sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700 hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-500 hover:duration-500" href="./index.html">
                             <ion-icon name="grid-outline" class="text-[20px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Dashboard</p>
                         </a>
+
+                        <!-- Opcion 2: Acceso a la lista de salas -->
                         <a id="select2" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700  hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="./form_sala.html">
                             <ion-icon name="list-outline" class="text-[20px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Lista de salas</p>
                         </a>
+
+                        <!-- Opcion 3: Acceso a la reserva de salas -->
                         <a id="select3" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700  hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="./nueva_reserva.html">
                             <ion-icon name="calendar-number-outline" class="text-[20px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Reservar sala</p>
                         </a>
+
+                        <!-- Opcion 4: Acceso al Reporte de reservas -->
                         <a id="select4" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700  hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="#">
                             <ion-icon name="reader-outline" class="text-[20px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Reporte de reservas</p>
                         </a>
+
+                        <!-- Opcion 5: Acceso a los usuarios -->
                         <a id="select5" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700  hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="./nuevo_usuario.html">
                             <ion-icon name="person-outline" class="text-[18px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Usuarios</p>
                         </a>
                     </div>
         
+                    <!-- Separador del menu -->
                     <div class="relative left-0 right-0 top-[7px] m-auto w-[90%] h-[1px] bg-gray-500"></div>
         
+                    <!-- Subtitulo "Mantenimiento" -->
                     <div class="relative mt-4 mb-3 flex flex-col">
                         <div class="pl-6">
                             <p class="text-gray-400 font-medium text-[17.5px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px]">Mantenimiento</p>
                         </div>
+                        <!-- Opcion 1: Acceso a la configuracion -->
                         <a id="select5" onclick="seleccion(this)" class="relative py-[10px] pl-9 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700 hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="./configuracion.html">
                             <ion-icon name="cog-outline" class="text-[18px]"></ion-icon>
                             <p class="ml-2 leading-[5px]">Configuracion</p>
                         </a>
                     </div>
         
+                    <!-- Separador del menu -->
                     <div class="relative left-0 right-0 m-auto w-[90%] h-[1px] bg-gray-500"></div>
         
+                    <!-- Opcion de Cerrar Sesion -->
                     <div class="relative top-1 flex flex-col mt-2 mb-4">
                         <a id="select5" onclick="seleccion(this)" class="relative py-[9px] pl-6 text-white font-medium flex items-center text-[17px] sm:text-[16px] lg:text-[15px] xl:text-[13.5px] xl:py-[8px] z-10 duration-700 after:z-[-1] after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#2f2c41] after:duration-700  hover:text-[#60c970] hover:after:left-0 hover:after:w-full hover:after:duration-700 hover:duration-700" href="../sesion/index.html">
                             <ion-icon name="exit-outline" class="text-[18px]"></ion-icon>
@@ -96,34 +124,41 @@
                     </div>
                 </div>
             </div>
-            <div id="menu-icon" class="hidden fixed left-0 top-0 bg-[#1E1C2E] w-[60px] h-full z-30 lg:flex lg:flex-col lg:justify-start pt-5">
+            <div id="menu-icon" class="hidden fixed left-0 top-0 bg-[#1E1C2E] w-[60px] h-full z-30 lg:flex lg:flex-col lg:justify-center">
                 
-                <div class="flex flex-col justify-between items-center h-[500px]">
-                    <button class="flex justify-center items-center text-white z-10">
-                        <ion-icon onclick="menu()" class="cursor-pointer text-[25px] sm:text-[30px] duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-500" name="menu-outline"></ion-icon>
+                    <button class="absolute top-2 left-4 flex justify-center items-center z-50">
+                        <ion-icon onclick="menu()" class="cursor-pointer text-[25px] text-white sm:text-[30px] duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-500" name="menu-outline"></ion-icon>    
                     </button>
-                    
+                <div class="flex flex-col justify-between items-center h-[400px]">
+                    <!-- Opcion 1: Acceso al perfil de usuario -->
                     <a href="../perfil/perfil.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="person-circle-outline" class="text-[30px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion 1: Acceso al dashboard -->
                     <a href="./index.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="grid-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion 1: Acceso a la lista de salas -->
                     <a href="./form_sala.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="list-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion 1: Acceso a reserva de salas -->
                     <a href="./nueva_reserva.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="calendar-number-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion 1: Acceso reporte de reservas -->
                     <a href="#" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="reader-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
-                    <a href="./nuevo_usuario.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
+                    <!-- Opcion 1: Acceso a los usuarios -->
+                    <a href="../dashboard/nuevo_usuario.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="person-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion 1: Acceso la configuracion -->
                     <a href="./configuracion.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="cog-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
+                    <!-- Opcion: Cerrar Sesion -->
                     <a href="../sesion/index.html" class="relative w-[40px] h-[40px] bg-[#2f2c41] rounded-[50%] flex justify-center items-center">
                         <ion-icon name="exit-outline" class="text-[25px] text-white duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-300"></ion-icon>
                     </a>
