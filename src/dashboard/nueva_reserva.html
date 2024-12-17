@@ -10,14 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="h-[100vh] relative font-[Poppins] flex flex-col overflow-x-hidden">
-    <header class="relative min-h-[50px] w-full bg-[#1E1C2E] flex items-center justify-between px-4 z-20 xl:min-h-[40px]">
-        <!-- Botón del menú (solo visible en pantallas pequeñas) -->
-        <button class="flex justify-center items-center text-white z-10">
-            <ion-icon onclick="menu()" class="cursor-pointer text-[25px] sm:text-[30px] duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-500" name="menu-outline"></ion-icon>
+    <header class="relative top-0 h-[50px] w-full bg-[#1E1C2E] flex items-center justify-center z-20 border-b-2 border-[#2e9f2a]">
+        <button class="absolute left-4 flex justify-center items-center z-50 lg:hidden">
+            <ion-icon onclick="menu()" class="cursor-pointer text-[25px] text-white sm:text-[30px] duration-500 hover:text-[#60c970] hover:transition-colors hover:duration-500" name="menu-outline"></ion-icon>    
         </button>
+        <div class="absolute left-0 right-0 m-auto lg:left-[60px] lg:m-0 w-[100px] h-full flex justify-center items-center">
+            <img class="relative w-[70%] h-[70%] object-cover" src="../img/logo.png" alt=""> 
+        </div>
+        <h1 class="hidden relative lg:flex lg:left-[5%] text-white text-[12px] text-center font-medium sm:text-[13px] md:text-[15px] lg:text-[16px] xl:text-[15px] transition-left duration-500">Sistema para Reserva de Salas de Conferencias</h1>
     </header>
-    <div class="relative w-full py-2 bg-[#34304f] lg:py-1">
-        <h1 class="relative lg:left-[5%] text-white text-[12.5px] text-center font-medium sm:text-[15.5px] md:text-[15px] lg:text-[13px] xl:text-[12px] transition-left duration-500">Sistema para Reserva de Salas de Conferencias</h1>
+    <div class="relative w-full py-1 bg-[#343140] lg:hidden">
+        <h1 class="relative lg:left-[5%] text-white text-[12px] text-center font-medium sm:text-[13px] md:text-[15px] lg:text-[16px] xl:text-[15px] transition-left duration-500">Sistema para Reserva de Salas de Conferencias</h1>
     </div>
     <main class="flex-1 flex">
         <div class="relative flex-1 flex">
